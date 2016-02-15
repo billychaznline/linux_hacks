@@ -1,8 +1,8 @@
 # PS1
-export PS1=`echo -ne "\[\033[0;34m\u@\h:\033[0;31m\w \033[0;35m\$\033[0;37m\] "`
+PS1="\[\033[0;34m\]\u@\[\033[0;31m\]\w \[\033[0;35m\]\$\[\033[0;37m\] "
 
 # Show info on terminal title bar
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@$(hostname -s): ${PWD}\007"'
+PROMPT_COMMAND='echo -ne "\033]0;${user}@$(hostname -s): ${pwd}\007"'
 
 alias ducks='du -cksh * | sort -nr | head -20'
 alias hcurl='curl -I -X GET "$1"'
